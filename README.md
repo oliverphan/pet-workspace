@@ -1,6 +1,14 @@
 
 
-# PetWorkspace
+# Pet Workspace
+
+This application contains an angular application with two views.
+1. Home page: Links to todos page
+2. Todo-list page: Describe the steps taken in the project and links to home page
+
+Serve the application with `nx serve todos`
+
+---
 
 This project was generated using [Nx](https://nx.dev).
 
