@@ -2,12 +2,20 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router'; // CLI imports router
 
 import { HomeComponent } from './home/home.component';
-import { TodoListComponent } from './todo-list/todo-list.component';
 
 const routes: Routes = [
-    { path: 'home', component: HomeComponent },
-    { path: 'todo-list', component: TodoListComponent },
-    { path: '', component: HomeComponent, pathMatch: 'full'}
+    { 
+      path: 'home', 
+      component: HomeComponent 
+    },
+    { 
+      path: 'todo-list',
+      loadChildren: () => import('./todo-list/todo-list.module').then(m => m.TodoListModule)
+    },
+    { 
+      path: '', 
+      component: HomeComponent, pathMatch: 'full'
+    }
   ]
 
 // configures NgModule imports and exports
