@@ -6,6 +6,6 @@ import { TodoListComponent } from './todo-list.component';
 // configures NgModule imports and exports
 @NgModule({
   imports: [CommonModule, TodoListRoutingModule],
-  exports: [TodoListComponent]
+  declarations: [ TodoListComponent ]
 })
 export class TodoListModule { }
