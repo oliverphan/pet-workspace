@@ -6,7 +6,7 @@ This application contains an angular application with two views.
 1. Home page: Links to todos page
 2. Todo-list page: Describe the steps taken in the project and links to home page
 
-Serve the application with `nx serve todos`
+Serve the application with `nx serve todos`. Make sure to include `--poll=2000` option to get webpack live reload.
 
 ---
 
