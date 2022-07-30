@@ -6,6 +6,8 @@ This application contains an angular application with two views.
 1. Home page: Links to todos page
 2. Todo-list page: Describe the steps taken in the project and links to home page
 
+The todo-list page is lazy loaded at the route level.
+
 Serve the application with `nx serve todos`. Make sure to include `--poll=2000` option to get webpack live reload.
 
 ---
